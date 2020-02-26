@@ -56,7 +56,7 @@ jekyll과 bundler를 설치하자.
 
 ***
 # 2. Github 블로그 만들기
-[Github](https://github.com)에 가입이 되어 있는 상태로 다음의 과정을 진행하고 혹시라도 Github에 가입이 안 되어 있으면 누구나 쉽게 가입할 수 있다. 
+[Github]에 가입이 되어 있는 상태로 다음의 과정을 진행하고 혹시라도 Github에 가입이 안 되어 있으면 누구나 쉽게 가입할 수 있다. 
 
 ## 2.1. 내 Github에 repository 만들기
 Github을 이용한 블로그들을 보면 대부분 "http://username.github.io"의 주소를 가지고 있으며, 이를 위해 나도 새로운 repository를 만들고 새로운 repository 이름을 "username.github.io"으로 만들었다.
@@ -107,3 +107,5 @@ clone한 테마의 폴더로 이동하자.
 # 참고자료
 * Jekyll 설치 <https://soojae.tistory.com/16>
 * Github 블로그 만들기 <https://devinlife.com/howto/>
+
+[Github]: https://github.com
