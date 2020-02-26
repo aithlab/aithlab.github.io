@@ -22,7 +22,7 @@ last_modified_at: 2020-02-26
 
 # 1. Jekyll 설치
 Github 블로그를 만들려고 구글링을 해보니 Jekyll이란 이야기가 많이 나왔다. 제목은 다들 "Github 블로그 쉽게 만들기"인데 생각보다 과정이 너무 복잡한 것 같다. 난 단순한 자료를 찾고 싶은데 다들 제목은 쉽게 따라 하고 쉽게 만든다는데 설치하고 세팅하는 과정들이 많다고 느꼈다.   
-*~~블로그를 만들고 보니 Jekyll을 설치하지 않아도 되는 것 같은데 일단 진행을 했던 부분이라 과정을 기록해본다. Jekyll로 서버를 실행해서 블로그를 띄우고 기타 등등을 하는 것 같은데 Gihub으로 블로그를 만드는 과정에는 필요가 없는 부분인 것 같다. Github 블로그를 쉽게 만드시려는 분들은 바로 다음 단계로 넘어가시면 됩니다.~~ 뒤에서 테마를 다운 받은 후 bundle 명령어를 해주지 않으면 404 error가 뜬다.* 
+*~~블로그를 만들고 보니 Jekyll을 설치하지 않아도 되는 것 같은데 일단 진행을 했던 부분이라 과정을 기록해본다. Jekyll로 서버를 실행해서 블로그를 띄우고 기타 등등을 하는 것 같은데 Gihub으로 블로그를 만드는 과정에는 필요가 없는 부분인 것 같다.~~ 뒤에서 테마를 다운 받은 후 bundle 명령어를 해주지 않으면 404 error가 뜬다.* 
 
 ## 1.1. 윈도우에 Jekyll 설치하기
 맥북과 윈도우 데스크탑을 같이 사용하고 있지만 듀얼 모니터로 연결된 윈도우 데스크탑이 편하다보니 윈도우 환경에서 블로그 만들기를 시작했다. 윈도우 환경에서 Jekyll을 설치하기 위해선 Ruby를 설치해야하는 것 같다. <https://rubyinstaller.org/downloads/> 에서 설치 파일을 다운로드 하자. 나는 해당 사이트에서 추천({{ page.last_modified_at }} 기준)하는 **Ruby+Devkit 2.6.X (x64)** 를 다운받았다.    
@@ -36,6 +36,16 @@ Github 블로그를 만들려고 구글링을 해보니 Jekyll이란 이야기�
 설치가 완료되면 다음과 같은 창이 뜨는데 이때 그냥 Enter만 눌러주면 된다.
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll3.JPG){: .align-center}
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll4.JPG){: .align-center}
+
+Ruby가 제대로 설치되었는지 다음의 명령어로 간단히 체크할 수 있다.
+> C:\\> ruby --version
+> ruby 2.6.5p114 (2019-10-01 revision 67812)
+
+그럼 이제 ruby를 이용해서 Jekyll을 설치하자.
+> C:\\> gem install jekyll bundle
+
+마찬가지로 Jekyll이 제대로 설치되었는지 다음의 명령어로 체크할 수 있다.
+> C:\\> jekyll --version
 
 일단 여기까지 하면 Jekyll은 설치가 끝난듯 하다. ~~그런데 Jekyll을 설치했는데 이걸로 뭘 하는건지 잘 모르겠다.~~ 나중에 repository와 연결하기 전에 다운 받은 테마 폴더에서 bundle 명령어를 실행해줘야 블로그 화면을 띄울 수 있다.
 
