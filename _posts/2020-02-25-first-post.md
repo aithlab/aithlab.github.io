@@ -24,15 +24,15 @@ Github 블로그를 만들려고 구글링을 해보니 Jekyll이란 이야기�
 ## 1.1. 윈도우에 Jekyll 설치하기
 맥북과 윈도우 데스크탑을 같이 사용하고 있지만 듀얼 모니터로 연결된 윈도우 데스크탑이 편하다보니 윈도우 환경에서 블로그 만들기를 시작했다. 윈도우 환경에서 Jekyll을 설치하기 위해선 Ruby를 설치해야하는 것 같다. <https://rubyinstaller.org/downloads/> 에서 설치 파일을 다운로드 하자. 나는 해당 사이트에서 추천({{ page.last_modified_at }} 기준)하는 **Ruby+Devkit 2.6.X (x64)** 를 다운받았다.    
 
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll1.png)*Ruby 설치파일 다운로드 사이트*
+![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll1.png){: .align-center}*Ruby 설치파일 다운로드 사이트*
 
 설치 중에 특별한 변경 사항 없이 기본 체크 사항으로 Next를 계속 눌러주었다.
 
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll2.png)
+![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll2.png){: .align-center}
 
 설치가 완료되면 다음과 같은 창이 뜨는데 이때 그냥 Enter만 눌러주면 된다.
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll3.JPG)
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll4.JPG)
+![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll3.JPG){: .align-center}
+![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll4.JPG){: .align-center}
 
 일단 여기까지 하면 Jekyll은 설치가 끝난듯 하다. ~~그런데 Jekyll을 설치했는데 이걸로 뭘 하는건지 잘 모르겠다.~~ 나중에 repository와 연결하기 전에 다운 받은 테마 폴더에서 bundle 명령어를 실행해줘야 블로그 화면을 띄울 수 있다.
 
@@ -57,7 +57,7 @@ jekyll과 bundler를 설치하자.
 
 ## 2.1. 내 Github에 repository 만들기
 Github을 이용한 블로그들을 보면 대부분 "http://username.github.io"의 주소를 가지고 있으며, 이를 위해 나도 새로운 repository를 만들고 새로운 repository 이름을 "username.github.io"으로 만들었다.
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_1_make_repository.png)*{username}.github.io repository를 만들자*
+![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_1_make_repository.png){: .align-center}*{username}.github.io repository를 만들자*
 
 ## 2.2. 블로그 테마 선택하기
 Github의 repository를 만들었으면 이제 http://jekyllthemes.org/ 에서 원하는 테마를 찾는다.
@@ -65,7 +65,7 @@ Github의 repository를 만들었으면 이제 http://jekyllthemes.org/ 에서 �
 
 본 블로그는 무료 테마 중 사람들이 많이 사용 한다는 [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)를 사용하였다. 하지만 본 블로그는 이미 만들어졌기 때문에 새로운 블로그 테마 [Minimal Resume](http://jekyllthemes.org/themes/Minimal-Resume/)를 이용해서 다음의 과정들을 진행한다.
 해당 테마를 선택한 후 Homepage 버튼을 눌러서 해당 테마의 Github 사이트로 이동하자.
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_2_select_theme.png)
+![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_2_select_theme.png){: .align-center}
 
 ## 2.3. 테마 다운
 테마의 github으로 이동했으면 다음과 같은 화면이 보일 것이다.
