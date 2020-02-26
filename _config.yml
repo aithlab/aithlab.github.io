@@ -20,7 +20,7 @@ title                    : "실패를 기록하는 공대생의 정리 노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Deep learner"
-description              : "목적을 위해 일단 시작하고 발생되는 문제점들을 수정하는 과정을 기록하는 정리 노트"
+description              : "일단 시작하고 그 과정에서 발생되는 문제점들의 디버깅을 기록하는 정리 노트"
 url                      : "https://aithlab.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
