@@ -26,9 +26,6 @@ Github 블로그를 만들려고 구글링을 해보니 Jekyll이란 이야기�
 설치 중에 별 다른 변경 사항 없이 기본 체크 사항으로 Next를 계속 눌러주었다.
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll2.png)
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll3.png)
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll4.png)
-![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll5.png)
 
 
 
