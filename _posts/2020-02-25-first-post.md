@@ -31,7 +31,7 @@ Github 블로그를 만들려고 구글링을 해보니 Jekyll이란 이야기�
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll3.JPG)
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/1_1_install_jekyll4.JPG)
 
-일단 여기까지 하면 Jekyll은 설치가 끝난듯 하다. ~~그런데 Jekyll을 설치했는데 이걸로 뭘 하는건지 잘 모르겠다.~~ 나중에 repository와 연결하기 전에 다운 받은 테마 폴더에서 bundle 명령어를 실행해줘 블로그 화면을 띄울 수 있다.
+일단 여기까지 하면 Jekyll은 설치가 끝난듯 하다. ~~그런데 Jekyll을 설치했는데 이걸로 뭘 하는건지 잘 모르겠다.~~ 나중에 repository와 연결하기 전에 다운 받은 테마 폴더에서 bundle 명령어를 실행해줘야 블로그 화면을 띄울 수 있다.
 
 ## 1.2 Mac에 Jekyll 설치하기
 Mac에서는 brew를 사용하여 설치할 수 있다. [참고](https://jekyllrb.com/docs/installation/macos/)
@@ -53,7 +53,7 @@ jekyll과 bundler를 설치하자.
 [Github](https://github.com)에 가입이 되어 있는 상태로 다음의 과정을 진행하고 혹시라도 Github에 가입이 안 되어 있으면 누구나 쉽게 가입할 수 있다. 
 
 ## 2.1. 내 Github에 repository 만들기
-Github을 이용한 블로그들을 보면 대부분 "http://{username}.github.io"의 주소를 가지고 있으며, 이를 위해 나도 새로운 repository를 만들고 새로운 repository 이름을 "{username}.github.io"으로 만들었다.
+Github을 이용한 블로그들을 보면 대부분 "http://username.github.io"의 주소를 가지고 있으며, 이를 위해 나도 새로운 repository를 만들고 새로운 repository 이름을 "username.github.io"으로 만들었다.
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_1_make_repository.png)*{username}.github.io repository를 만들자*
 
 ## 2.2. 블로그 테마 선택하기
@@ -89,15 +89,15 @@ clone한 테마의 폴더로 이동하자.
 테마를 clone하여 가져온 것이므로 기존의 remote origin을 제거한다.
 > $ git remote remove origin
 
-2.1.에서 만든 repository를 등록하자.
-> $ git remote add origin https://github.com/{username}/{username}.github.io.git
+[2.1.](#2.1. 내 Github에 repository 만들기)에서 만든 repository를 등록하자.
+> $ git remote add origin https://github.com/username/username.github.io.git
 
 내 git repo에 소스가 업로드 되도록 push하자.
 > $ git push -u origin master
 
 여기까지 했으면 이제 나만의 블로그가 생성되었을 것이다. {username}.github.io을 통해 내 블로그에 접속하자.
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_4_blog.png)*내 블로그가 만들어졌다.*
-
+***
 # 참고자료
-* Jekyll 설치 https://soojae.tistory.com/16
-* Github 블로그 만들기 https://devinlife.com/howto/
+* Jekyll 설치 <https://soojae.tistory.com/16>
+* Github 블로그 만들기 <https://devinlife.com/howto/>
