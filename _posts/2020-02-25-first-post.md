@@ -1,6 +1,7 @@
 ---
 title:  "Github 블로그를 만들기"
 excerpt: "Github 블로그 만들었던 과정을 정리"
+toc: true
 
 categories:
   - Blog
