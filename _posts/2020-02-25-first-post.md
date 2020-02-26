@@ -113,6 +113,7 @@ clone한 테마의 폴더로 이동하자.
 
 여기까지 했으면 이제 나만의 블로그가 생성되었을 것이다. {username}.github.io을 통해 내 블로그에 접속하자.
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/1.make_blog/2_4_blog.png)*내 블로그가 만들어졌다.*
+
 ***
 # 참고자료
 * Jekyll 설치 <https://soojae.tistory.com/16>
