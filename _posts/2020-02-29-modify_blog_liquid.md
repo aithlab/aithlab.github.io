@@ -1,6 +1,6 @@
 ---
-title:  "GitHub 블로그 - {%, %}, {{, }}"
-excerpt: "블로그내에서 Liquid 언어 표시하기"
+title:  "GitHub 블로그 - Liquid"
+excerpt: "블로그에서 {%, %}, {{, }} 텍스트로 표시하기"
 toc: true
 toc_sticky: true
 toc_label: "목차"
