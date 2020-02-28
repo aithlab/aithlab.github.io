@@ -100,7 +100,8 @@ last_modified_at: ~
 `$ ~ $`: 
 $\times $, $\int$, $\sigma$, $alpha$  
 `$$ ~ $$`:  
-$$N(\mu, \sigma)={1 \over \sqrt{2\pi\sigma^2}}exp({-{1 \over 2\sigma^2}} (x-\mu)^2)$$  
+
+$$ N(\mu, \sigma)={1 \over \sqrt{2\pi\sigma^2}}exp({-{1 \over 2\sigma^2}} (x-\mu)^2) $$  
 
 
 ***
