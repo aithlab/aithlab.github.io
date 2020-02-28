@@ -42,6 +42,7 @@ incremental: false
 
 [내가 받은 테마](https://github.com/mmistakes/minimal-mistakes)의 경우 위의 세팅은 기본적으로 되어 있었다.  
 
+
 2\. mathjax_support.html 파일 만들기  
 `_includes` 폴더 안에 새로운 파일을 만들어주어야 한다. `mathjax_support.html`이란 파일을 새로 만들고 아래의 내용을 추가하자.  
 
@@ -71,19 +72,23 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 </script>
 ```  
 
+
 3\. head.html 수정하기  
 `_includes` 폴더 안에 이미 존재하는 `head.html` 파일에 다음의 내용을 추가해 주자.  
 
+{% raw %}
 ```
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
 ```
+{% endraw %}
+
 
 4\. 수식 입력이 가능하도록 포스트에 옵션 추가하기  
 포스트를 만들 때 다양한 옵션들이 있겠지만 나는 [처음 블로그를 만들 때 참고했던 사이트](https://devinlife.com/howto%20github%20pages/first-post/)에서 사용하는 옵션만을 사용하고 있었다. 여기에 `use_math: true` 항목만 추가적으로 입력해 주면 수식을 사용할 수 있다.  
 
-```
+```html
 ---
 title: ~
 excerpt: ~
@@ -96,6 +101,7 @@ tags:
 last_modified_at: ~
 ---
 ```  
+
 
 위와 같은 세팅 과정을 거치면 Jupyter Notebook에서와 같이 `$ ~ $` 또는 `$$ ~ $$`로 수식 입력이 가능하다.  
 예)  
