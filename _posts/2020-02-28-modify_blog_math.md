@@ -1,6 +1,6 @@
 ---
 title:  "GitHub 블로그 - 수식 입력"
-excerpt: "블로그내에서 수식 입력할 수 있도록 세팅하기"
+excerpt: "블로그에서 수식 입력할 수 있도록 세팅하기"
 toc: true
 toc_sticky: true
 toc_label: "목차"
