@@ -73,19 +73,17 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 3\. head.html 수정하기  
 `_includes` 폴더 안에 이미 존재하는 `head.html` 파일에 다음의 내용을 추가해 주자.  
-test
-`{% if page.use_math %}`
 
-~~~html
+```
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
-~~~  
+```
 
 4\. 수식 입력이 가능하도록 포스트에 옵션 추가하기  
 포스트를 만들 때 다양한 옵션들이 있겠지만 나는 [처음 블로그를 만들 때 참고했던 사이트](https://devinlife.com/howto%20github%20pages/first-post/)에서 사용하는 옵션만을 사용하고 있었다. 여기에 `use_math: true` 항목만 추가적으로 입력해 주면 수식을 사용할 수 있다.  
 
-```md
+```
 ---
 title: ~
 excerpt: ~
