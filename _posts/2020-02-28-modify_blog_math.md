@@ -100,6 +100,8 @@ last_modified_at: ~
 `$$ ~ $$`: $$N(\mu, \sigma)={1 \over \sqrt{2\pi\sigma^2}}exp({-{1 \over 2\sigma^2}} (x-\mu)^2)$$  
 `$ ~ $`: $\times $, $\int$, $\sigma$, $alpha$
 
+***
+
 # 참고자료
 * [수식 입력하기][수식 입력하기]
 
