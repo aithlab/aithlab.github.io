@@ -29,7 +29,7 @@ Jupyter Notebook에서는 단순히 `$ ~ $` 형태로 inline 수식을 입력하
 1\. _config.yml 수정하기
 블로그 관련 자료들이 있는 제일 상위 폴더에 존재하는 `_config.yml` 파일을 수정해주어야 한다.
 
-```markdown
+```md
 # Conversion
 markdown: kramdown
 highlighter: rouge
