@@ -28,7 +28,7 @@ Jupyter Notebook에서는 단순히 `$ ~ $` 형태로 inline 수식을 입력하
 하지만 Jekyll 테마를 이용하여 Github 블로그를 만들고 당연히 수식이 입력될 줄 알고 Jupyter Notebook에서 사용하던대로 썼는데 수식입력이 되지 않았다. 
 내가 받은 테마만 기본적으로 세팅이 되지 않은 건지 아니면 다른 Jekyll 테마들도 세팅이 되지 않은건지 정확히 알 수는 없지만 중요한 문제는 아니고 그냥 단순히 세팅을 추가해주면 되는 것이라 해당 자료를 찾아 수식 입력이 가능하도록 세팅을 하였다. 수식 입력하는 방법은 [[GitHub] Github 블로그 수식 추가 (kiko-now)][수식 입력하기]를 참고하였고, 아래의 내용도 해당 블로그에서 가져온 내용이다.
 
-1\. _config.yml 수정하기
+1\. _config.yml 수정하기  
 블로그 관련 자료들이 있는 제일 상위 폴더에 존재하는 `_config.yml` 파일을 수정해주어야 한다.
 
 ```md
@@ -42,8 +42,8 @@ incremental: false
 
 [내가 받은 테마](https://github.com/mmistakes/minimal-mistakes)의 경우 위의 세팅은 기본적으로 되어 있었다.
 
-2\. mathjax_support.html 파일 만들기
-`_includes` 폴더 안에 새로운 파일을 만들어주어야 한다. `mathjax_support.html`이란 파일을 새로 만들고 아래의 내용을 추가하자.
+2\. mathjax_support.html 파일 만들기  
+`_includes` 폴더 안에 새로운 파일을 만들어주어야 한다. `mathjax_support.html`이란 파일을 새로 만들고 아래의 내용을 추가하자.  
 
 ```html
 <script type="text/x-mathjax-config">
@@ -71,8 +71,8 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 </script>
 ```
 
-3\. head.html 수정하기
-`_includes` 폴더 안에 이미 존재하는 `head.html` 파일에 다음의 내용을 추가해주자.
+3\. head.html 수정하기  
+`_includes` 폴더 안에 이미 존재하는 `head.html` 파일에 다음의 내용을 추가해주자.  
 
 ```html
 
@@ -82,8 +82,8 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 ```
 
-4\. 수식 입력이 가능하도록 포스트에 옵션 추가하기
-포스트를 만들때 다양한 옵션들이 있겠지만 나는 처음 포스트를 만들때 참고했던 [사이트](https://devinlife.com/howto%20github%20pages/first-post/)에서 사용하는 옵션만을 사용하고 있었다. 여기에 `use_math: true` 항목만 추가적으로 입력해주면 수식을 사용할 수 있다.
+4\. 수식 입력이 가능하도록 포스트에 옵션 추가하기  
+포스트를 만들때 다양한 옵션들이 있겠지만 나는 처음 포스트를 만들때 참고했던 [사이트](https://devinlife.com/howto%20github%20pages/first-post/)에서 사용하는 옵션만을 사용하고 있었다. 여기에 `use_math: true` 항목만 추가적으로 입력해주면 수식을 사용할 수 있다.  
 
 ```md
 ---
