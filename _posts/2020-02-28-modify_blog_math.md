@@ -73,7 +73,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 3\. head.html 수정하기  
 `_includes` 폴더 안에 이미 존재하는 `head.html` 파일에 다음의 내용을 추가해 주자.  
-
+test
 `{% if page.use_math %}`
 
 ~~~html
