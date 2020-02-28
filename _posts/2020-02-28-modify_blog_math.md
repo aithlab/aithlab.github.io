@@ -75,9 +75,9 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 `_includes` 폴더 안에 이미 존재하는 `head.html` 파일에 다음의 내용을 추가해 주자.  
 
 ~~~html
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
+\{% if page.use_math %}
+  \{% include mathjax_support.html %}
+\{% endif %}
 ~~~  
 
 4\. 수식 입력이 가능하도록 포스트에 옵션 추가하기  
