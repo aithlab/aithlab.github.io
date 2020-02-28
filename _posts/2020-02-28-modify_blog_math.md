@@ -98,11 +98,11 @@ last_modified_at: ~
 위와 같은 세팅 과정을 거치면 Jupyter Notebook에서와 같이 `$ ~ $` 또는 `$$ ~ $$`로 수식 입력이 가능하다.  
 예)  
 `$ ~ $`: 
+
 $\times $, $\int$, $\sigma$, $alpha$  
 `$$ ~ $$`:  
 
 $$ N(\mu, \sigma)={1 \over \sqrt{2\pi\sigma^2}}exp({-{1 \over 2\sigma^2}} (x-\mu)^2) $$  
-
 
 ***
 
