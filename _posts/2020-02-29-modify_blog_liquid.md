@@ -24,10 +24,7 @@ last_modified_at: 2020-02-29
 ***
 
 # 1. Liquid 문법 표시하기
-{% raw %}
-`{{ ~ }}`,`{% ~ %}`
-{% endraw %}
-형태를 텍스트로 표시하기 위해서는 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/4.blog_liquid/1_sentence1.png">, <img src="{{ site.url }}{{ site.baseurl }}/assets/images/4.blog_liquid/1_sentence2.png">와 같이 앞과 뒤에 raw, endraw를 추가해주면 된다.
+{% raw %}`{{ ~ }}`,`{% ~ %}`{% endraw %} 형태를 텍스트로 표시하기 위해서는 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/4.blog_liquid/1_sentence1.png">, <img src="{{ site.url }}{{ site.baseurl }}/assets/images/4.blog_liquid/1_sentence2.png">와 같이 앞과 뒤에 raw, endraw를 추가해주면 된다.
 {% raw %}`{{ page.title }}`{% endraw %}에 대해서 raw와 endraw를 포함한 경우와 포함하지 않은 경우의 결과를 확인해보겠다.
 
 raw와 endraw없이 했을 경우
@@ -46,8 +43,9 @@ raw와 endraw를 추가했을 경우
 
 ***
 
+# 참고자료
+* <https://stackoverflow.com/questions/24102498/escaping-double-curly-braces-inside-a-markdown-code-block-in-jekyll>
 
 [Liquid]: https://jekyllrb.com/docs/liquid/
-[참고자료]: https://stackoverflow.com/questions/24102498/escaping-double-curly-braces-inside-a-markdown-code-block-in-jekyll
-
 [Jekyll 참고]: https://github.com/gud2great/unistclub/wiki/%EC%A7%80%ED%82%AC(Jekyll)%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
