@@ -6,8 +6,8 @@ toc_sticky: true
 toc_label: "목차"
 use_math: true
 
-categories: [Blog, Markdown]
-tags: [Blog, Markdown]
+categories: Blog, Markdown
+tags: Blog, Markdown
 last_modified_at: 2020-02-28
 ---
 
