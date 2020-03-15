@@ -36,14 +36,8 @@ def asterisk_test(*_tuple, **_dict):
   print(_tuple, _dict)
   
 asterisk_test(1,2,3, p1='2', p2='3')
+> (1, 2, 3) {'p1': '2', 'p2': '3'}
 ```
-
-결과:
-
-```python
-(1, 2, 3) {'p1': '2', 'p2': '3'}
-```
-
 
 
 ***
