@@ -27,7 +27,23 @@ last_modified_at: 2020-03-14
 int num = 1;
 int *var = &num; 
 ```
-`C`에서는 위와 같이 주소 값을 저장하는 포인터 변수를 정의하는데 사용된다. 하지만 `Python`에서는 이와는 전혀 다른 의미로 사용된다. `Python` 코드를 보다보면 종종 함수에서 `*args`, `**kwargs`로 인자를 받는 경우를 볼 수 있을 것이다. `*`는 전달인자(argument)의 개수를 미리 정해놓지 않고 여러 개를 받을 수 있는 것을 의미한다. 그리고 여기서 `*`를 하나만 사용하면 사용하면 매개변수(parameter)에 전달되는 데이터의 형태가 <span style="color:purple">tuple</span> 로 전달 되는 것을 의미하고 `**`를 사용하면 <span style="color:purple">dictionary</span> 형태로 전달 되는 것을 의미한다. `*`와 `**` 뒤의 args, kwargs는 단순히 매개변수명이므로 원하는 이름으로 바꿔서 사용이 가능하다. 즉, `*tuple`, `**dict` 형태로도 사용이 가능하다.
+`C`에서는 위와 같이 주소 값을 저장하는 포인터 변수를 정의하는데 사용된다. 하지만 `Python`에서는 이와는 전혀 다른 의미로 사용된다. `Python` 코드를 보다보면 종종 함수에서 `*args`, `**kwargs`로 인자를 받는 경우를 볼 수 있을 것이다. `*`는 전달인자(argument)의 개수를 미리 정해놓지 않고 여러 개를 받을 수 있는 것을 의미한다. 그리고 여기서 `*`를 하나만 사용하면 사용하면 매개변수(parameter)에 전달되는 데이터의 형태가 <span style="color:purple">tuple</span> 로 전달 되는 것을 의미하고 `**`를 사용하면 <span style="color:purple">dictionary</span> 형태로 전달 되는 것을 의미한다. `*`와 `**` 뒤의 args, kwargs는 단순히 매개변수명이므로 원하는 이름으로 바꿔서 사용이 가능하다. 즉, `*_tuple`, `**_dict` 형태로도 사용이 가능하다.
+
 > 보통 `*`와 `**` 뒤에 등장하는 args와 kwargs는 각각 arguments, keyword arguments를 의미한다. 
+
+```python
+def asterisk_test(*_tuple, **_dict):
+  print(_tuple, _dict)
+  
+asterisk_test(1,2,3, p1='2', p2='3')
+```
+
+결과:
+
+```python
+(1, 2, 3) {'p1': '2', 'p2': '3'}
+```
+
+
 
 ***
