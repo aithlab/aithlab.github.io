@@ -1,5 +1,5 @@
 ---
-title:  "Scipy - pdist, squareform"
+title:  "Python - SciPy(pdist, squareform)"
 excerpt: "Scipy의 pdist, squareform을 이용하여 distance 쉽게 구하기"
 toc: false
 toc_sticky: true
@@ -9,7 +9,7 @@ use_math: true
 categories: 
   - Python
 tags: 
-  - scipy
+  - SciPy
   - distance
 last_modified_at: 2020-03-14
 ---
