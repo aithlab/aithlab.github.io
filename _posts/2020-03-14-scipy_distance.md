@@ -42,7 +42,7 @@ pts_dists = squareform(pairwise_dists)
 한줄로 쉽게 사용하려면 다음과 같이 사용하면 된다.
 
 ```python
-pairwise_dists = squareform(pdist(pts, metric='euclidean'))
+dists = squareform(pdist(pts, metric='euclidean'))
 ```
 
 ***
