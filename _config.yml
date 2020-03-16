@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Deep Learner"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "F5부터 누르고 보는 성격 급한 공대생의 디버깅 노트"
+  bio              : "'Run'부터 누르고 보는 성격 급한 공대생의 디버깅 노트"
   location         : "South Korea"
   email            :
   links:
