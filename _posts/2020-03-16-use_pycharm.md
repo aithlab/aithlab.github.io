@@ -16,7 +16,7 @@ last_modified_at: 2020-03-16
 
 ***
 
-**Interpreter 설정 방법이 본 포스팅에서 제공하는 방법이 정답은 아닐 것 같다. 하지만 PyCharm으로 Hello world를 프린트하는 것이 본 포스팅의 목적이다.**
+**PyCharm 세팅 과정은 본 포스팅에서 제공하는 방법이 정답이 아닐 수 있다. 하지만 PyCharm으로 Hello world를 프린트하는 것이 본 포스팅의 목적이다.**
 
 새로운 언어를 시작하게 되면 제일 먼저 접하게 되는 것이 어디에 코딩을 할 것인가이다. 가장 기초적인 방법으로는 그냥 text파일 하나 열어서 코딩을 하면 될 것이다. 하지만 시중에는 이미 좋은 Editor들과 IDE(Integrated Development Environment)가 많이 존재하기 때문에 사람들이 많이 쓰고 내가 쓰기 편한 것을 골라 코딩을 시작하게 된다. 나는 Python을 제일 처음 접했을때 아무것도 모르는 상태로 Python을 설치했더니 `IDLE`가 함께 설치되어 `IDLE`를 이용하여 코딩을 했었는데, `Matlab`을 사용하다가 `IDLE`로 Python 코딩을 하다보니 다시 `C`로 돌아간 기분이 들었었다. `Matlab`을 사용하면서 가장 좋았고 편했던게 variable explorer가 있다는 것이었다. variable explorer를 통해 그때 그때 바로 값을 확인할 수 있어서 디버깅하기 쉬웠는데 `IDLE`는 그런 variable explorer가 없어서 많이 답답했었다. 그러다가 우연히 `Spyder`를 알게 되고 variable explorer를 지원하는 것을 알게되어 그 이후로는 쭉 `Spyder`를 사용해왔다. 그리고 최근에는 `Jupyter Notebook`도 자주 사용하는데 `Jupyter Notebook`은 뭔가 실제 코딩 보다는 수업에서 step-by-step으로 실행할 때나 세미나때 사용하기 좋은 것 같다. 그리고 본 포스팅에서는 `PyCharm` 사용법에 대해 다뤄보려고 한다. 뜬금없이 `PyCharm`을 사용해보려는 이유는 우선 많은 사람들이 `PyCharm`을 사용하기도 하고 얼마 전부터 Google에서 시험을 통해 [TensorFlow certificate](https://www.tensorflow.org/certificate)을 발급한다고 하는데 이 시험을 위해서는 `PyCharm`을 사용해야한다는 조건이 있기 때문이다. 박사과정을 시작하면서부터 기존 `TensorFlow`에서 `PyTorch`로 넘어와서 TensorFlow certificate 시험을 볼지는 모르겠지만, 아무래도 Google에서 발급하는 것이다보니 기회가 되면 테스트를 보는 것도 좋을 것 같아 `PyCharm`에 익숙해져보려고 한다.
 
