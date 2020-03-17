@@ -43,13 +43,13 @@ last_modified_at: 2020-03-16
 
 설치 시에 나오는 옵션들은 모두 default로 설치하였다. 그리고 `PyCharm`을 실행하면 다음의 화면이 보인다.
 
-<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/2_pycharm1.png">
+<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/2_pycharm1.PNG">
 
 사실 여기서 조금 해맸다. 주로 쓰는 `Spyder`의 경우 Project의 개념이 없어서 그냥 실행 파일만 열면 되는데 `PyCharm`에서는 project를 열라고 하는데 난 파일만 열고 싶고.. 일단 `PyCharm`에서 원하는대로 project를 하나 만들어 보았다. python 파일을 하나 만들어서 `Hello World`를 print 해봤는데 오류가 났다. 오류가 났다기 보다는 뭔가 실행이 되지 않았다. Interpreter를 설정해주지 않아서 발생한 오류였다. 
 
 # 3. Python Interpreter 설정하기
 
-<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/3_pycharm1.png">
+<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/3_pycharm1.PNG">
 
 Interpreter를 설정하는 방법은 project를 생성하고 나서도 만들 수가 있는데 뭔가 base interpreter를 잡아주고 싶다는 생각이 들어서 project를 생성하기 전의 화면으로 돌아가서(`File` 탭에서 `Close Project`를 클릭하면 된다.) `Configure`를 클릭하여 `Settings`를 클릭하자. 다음과 같은 project setting 화면을 볼 수 있는데 왼쪽 리스트 중 `Project Interpreter`를 클릭하면 현재는 interpreter 설정이 되어있지 않아 설치된 Package들이 보이지 않는 것을 볼 수 있다. 옆에 있는 톱니바퀴를 눌러 `Show All...`을 선택하자.  
 
