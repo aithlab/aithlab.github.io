@@ -16,9 +16,11 @@ last_modified_at: 2020-03-16
 
 ***
 
+**Interpreter 설정 방법이 본 포스팅에서 제공하는 방법이 정답은 아닐 것 같다. 하지만 PyCharm으로 Hello world를 프린트하는 것이 본 포스팅의 목적이다.**
+
 새로운 언어를 시작하게 되면 제일 먼저 접하게 되는 것이 어디에 코딩을 할 것인가이다. 가장 기초적인 방법으로는 그냥 text파일 하나 열어서 코딩을 하면 될 것이다. 하지만 시중에는 이미 좋은 Editor들과 IDE(Integrated Development Environment)가 많이 존재하기 때문에 사람들이 많이 쓰고 내가 쓰기 편한 것을 골라 코딩을 시작하게 된다. 나는 Python을 제일 처음 접했을때 아무것도 모르는 상태로 Python을 설치했더니 `IDLE`가 함께 설치되어 `IDLE`를 이용하여 코딩을 했었는데, `Matlab`을 사용하다가 `IDLE`로 Python 코딩을 하다보니 다시 `C`로 돌아간 기분이 들었었다. `Matlab`을 사용하면서 가장 좋았고 편했던게 variable explorer가 있다는 것이었다. variable explorer를 통해 그때 그때 바로 값을 확인할 수 있어서 디버깅하기 쉬웠는데 `IDLE`는 그런 variable explorer가 없어서 많이 답답했었다. 그러다가 우연히 `Spyder`를 알게 되고 variable explorer를 지원하는 것을 알게되어 그 이후로는 쭉 `Spyder`를 사용해왔다. 그리고 최근에는 `Jupyter Notebook`도 자주 사용하는데 `Jupyter Notebook`은 뭔가 실제 코딩 보다는 수업에서 step-by-step으로 실행할 때나 세미나때 사용하기 좋은 것 같다. 그리고 본 포스팅에서는 `PyCharm` 사용법에 대해 다뤄보려고 한다. 뜬금없이 `PyCharm`을 사용해보려는 이유는 우선 많은 사람들이 `PyCharm`을 사용하기도 하고 얼마 전부터 Google에서 시험을 통해 [TensorFlow certificate](https://www.tensorflow.org/certificate)을 발급한다고 하는데 이 시험을 위해서는 `PyCharm`을 사용해야한다는 조건이 있기 때문이다. 박사과정을 시작하면서부터 기존 `TensorFlow`에서 `PyTorch`로 넘어와서 TensorFlow certificate 시험을 볼지는 모르겠지만, 아무래도 Google에서 발급하는 것이다보니 기회가 되면 테스트를 보는 것도 좋을 것 같아 `PyCharm`에 익숙해져보려고 한다.
 
-> IDE와 Editor 차이: IDE는 Integrated Development Environment의 약자로써 
+> IDE와 Editor 차이([참고](https://discuss.atom.io/t/what-is-the-difference-between-an-ide-and-an-editor/32629)): IDE는 Integrated Development Environment의 약자로써 IDE는 text editor, compiler, debugging 등이 모두 포함되어 있고, 특정 언어 또는 framework에 묶여있다고 한다. 하지만 Editor의 경우 말 그대로 text를 edit하기 위한 툴로써 언어 또는 framework에 제약 없이 사용이 가능하도록 디자인 된 툴이라고 한다.
 
 ***
 
@@ -41,13 +43,15 @@ last_modified_at: 2020-03-16
 
 설치 시에 나오는 옵션들은 모두 default로 설치하였다. 그리고 `PyCharm`을 실행하면 다음의 화면이 보인다.
 
-<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/2_pycharm1.JPG">
+<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/2_pycharm1.png">
 
-사실 여기서 조금 해맸다. 주로 쓰는 `Spyder`의 경우 Project의 개념이 없어서 그냥 실행 파일만 열면 되는데 `PyCharm`에서는 project를 열라고 하는데 난 파일만 열고 싶고.. 일단 `PyCharm`에서 원하는대로 project를 하나 만들어 보았다. python 파일을 하나 만들어서 `Hello World`를 print 해봤는데 오류가 났다. Interpreter를 설정해주자!
+사실 여기서 조금 해맸다. 주로 쓰는 `Spyder`의 경우 Project의 개념이 없어서 그냥 실행 파일만 열면 되는데 `PyCharm`에서는 project를 열라고 하는데 난 파일만 열고 싶고.. 일단 `PyCharm`에서 원하는대로 project를 하나 만들어 보았다. python 파일을 하나 만들어서 `Hello World`를 print 해봤는데 오류가 났다. 오류가 났다기 보다는 뭔가 실행이 되지 않았다. Interpreter를 설정해주지 않아서 발생한 오류였다. 
 
 # 3. Python Interpreter 설정하기
 
-`File > Settings > Prject: username > Project interpreter`으로 이동하면 다음의 화면을 볼 수 있다. 현재는 interpreter 설정이 되어있지 않아 설치된 Package들이 보이지 않는다. 옆에 있는 톱니바퀴를 눌러 `Show All...`을 선택하자.  
+<img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/3_pycharm1.png">
+
+Interpreter를 설정하는 방법은 project를 생성하고 나서도 만들 수가 있는데 뭔가 base interpreter를 잡아주고 싶다는 생각이 들어서 project를 생성하기 전의 화면으로 돌아가서(`File` 탭에서 `Close Project`를 클릭하면 된다.) `Configure`를 클릭하여 `Settings`를 클릭하자. 다음과 같은 project setting 화면을 볼 수 있는데 왼쪽 리스트 중 `Project Interpreter`를 클릭하면 현재는 interpreter 설정이 되어있지 않아 설치된 Package들이 보이지 않는 것을 볼 수 있다. 옆에 있는 톱니바퀴를 눌러 `Show All...`을 선택하자.  
 
 <img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/3_interpreter1.png">
 
@@ -63,7 +67,7 @@ Interpreter를 잡아주고 이전 화면으로 나와보니 아까는 아무것
 
 <img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/3_interpreter4.JPG">
 
-python 파일을 하나 만들어서 Hello world를 출력해보자.
+project를 하나 만들고 python 파일을 만들어 Hello world를 출력해보자.
 
 <img align='center' src="{{ site.url }}{{ site.baseurl }}/assets/images/9.use_pycharm/3_interpreter5.JPG">
 
@@ -72,5 +76,6 @@ python 파일을 하나 만들어서 Hello world를 출력해보자.
 ***
 
 # 참고자료
+* IDE와 Editor 차이: <https://discuss.atom.io/t/what-is-the-difference-between-an-ide-and-an-editor/32629>
 * Editor/IDE 종류: <https://www.programiz.com/python-programming/ide>
 * Editor/IDE 종류: <https://realpython.com/python-ides-code-editors-guide/>
