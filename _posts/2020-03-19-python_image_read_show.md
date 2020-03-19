@@ -82,7 +82,6 @@ last_modified_at: 2020-03-19
 간단한 예제로 영상 처리 등에서 많이 사용되는 [Lenna](https://en.wikipedia.org/wiki/Lenna) 이미지를 사용하여 테스트 해보자.
 
 ```python
-
 img_path = './Lenna.png'
 img = cv2.imread(img_path) # BGR
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
