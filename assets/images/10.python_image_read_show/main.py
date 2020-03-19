@@ -4,11 +4,11 @@ import cv2
 import tensorflow as tf
 from PIL import Image
 
-img_path = 'D:/OneDrive - KoreaUniv/2.blog/assets/images/10.python_image_read_show/Lenna.png'
+img_path = './Lenna.png'
 img_cv2 = cv2.imread(img_path) # BGR
 img_pil = Image.open(img_path) # RGB
 img_matplotlib = plt.imread(img_path) # RGB, float32
-img_tf = tf.image.decode_png(tf.io.read_file(img_path))
+img_tf = tf.io.decode_png(tf.io.read_file(img_path))
 
 print((np.array(img_pil) == img_cv2).all(0).all(0))
 > [False  True False]
