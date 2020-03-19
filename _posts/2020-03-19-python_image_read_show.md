@@ -1,5 +1,5 @@
 ---
-title:  "Python - 이미지 처리 (1)"
+title:  "Python - 이미지 처리"
 excerpt: "라이브러리별 image read 비교 및 matplotlib 축 반전시키기"
 toc: true
 toc_sticky: true
