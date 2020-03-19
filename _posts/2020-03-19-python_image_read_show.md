@@ -36,8 +36,8 @@ last_modified_at: 2020-03-19
 * matlpotlib (version: 3.1.1)
 * TensorFlow (version: 2.1.0)
 
-> 1. [참고](https://www.kaggle.com/vfdev5/pil-vs-opencv)에 따르면, 처리 속도에서 pillow 보다 opencv가 더 빠르다고 한다.
-> 2. PyTorch(torchvision)에서는 내부적으로 pillow를 backend로 이용한다.[참고](https://github.com/pytorch/vision#image-backend)
+> 1\. [참고](https://www.kaggle.com/vfdev5/pil-vs-opencv)에 따르면, 처리 속도에서 pillow 보다 opencv가 더 빠르다고 한다.  
+> 2\. PyTorch(torchvision)에서는 내부적으로 pillow를 backend로 이용한다.[참고](https://github.com/pytorch/vision#image-backend)
 
 각각의 라이브러리에는 이미지를 읽기 위한 함수가 존재한다.
 `opencv`에서는 `cv2.read`, `pillow`에서는 `Image.open` 그리고 `matplotlib`에서는 `plt.imread`를 통해 이미지를 불러올 수 있다. 
