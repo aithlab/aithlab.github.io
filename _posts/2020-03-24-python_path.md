@@ -64,4 +64,4 @@ os 라이브러리에서 많이 사용하는 함수들은 다음과 같다.
 
 # 참고자료
 * 모듈 vs. 라이브러리: <https://brownbears.tistory.com/437>
-* https://wikidocs.net/3717
+* <https://wikidocs.net/3717>
