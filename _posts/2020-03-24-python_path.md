@@ -25,7 +25,7 @@ last_modified_at: 2020-03-24
 
 Data를 불러오는 라이브러리는 데이터의 형태에 따라 다양하게 있다.
 
-* Image 파일 - opencv, pillow, matplotlib, TensorFlow, ... [Python - 이미지 처리 포스팅 참고]({{ site.url }}{{ site.baseurl }}/_posts/2020-03-19-python_image_read_show.md)
+* Image 파일 - opencv, pillow, matplotlib, TensorFlow, ... [Python - 이미지 처리 포스팅 참고]({{ site.url }}{{ site.baseurl }}/python/python_image_read_show/)
 * Audio 파일 - wave, scipy, pydub, ..
 * 엑셀 파일 - pandas, xlrd, ...
 
