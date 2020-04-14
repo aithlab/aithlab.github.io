@@ -1,5 +1,5 @@
 ---
-title:  "SHH tunneling"
+title:  "SSH tunneling"
 excerpt: "GPU 서버의 resource를 로컬에서 사용하기"
 toc: true
 toc_sticky: true
@@ -92,6 +92,7 @@ ssh -N -f -L 8888:node2:8888 [userid]@[서버주소] -p [포트번호]
 
 이제 web browser에서 jupyter notebok에 접속하자.
 주소창에 `localhost:[ssh 연결시 설정한 로컬에서 사용할 포트]`을 입력하면 `jupyter notebok` 화면이 뜨는 것을 볼 수 있다.
+그리고 터미널이나 python 파일을 하나 만들어보면 서버에 있는 GPU가 잡히는 것을 확인할 수 있다.
 
 # 2.3. jupyter notebook setting
 
@@ -104,7 +105,6 @@ jupyter notebook --generate-config
 위의 명령어를 실행하면 ~/.jupyter 경로에 `jupyter_notebook_config.py` 파일이 생성된 것을 볼 수 있다.
 이제 이 파일을 수정하여 원하는 설정을 하도록 한다.
 나는 다음의 설정들을 주석 해제와 함께 수정하였다.
-
 
 ```bash 
 #Notebook에 모든 ip가 접속할 수 있도록 수정
