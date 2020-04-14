@@ -1,5 +1,5 @@
 ---
-title:  "Key point detection - OpenPose"
+title:  "OpenPose"
 excerpt: "CMU의 OpenPose를 windows 10 환경에서 실행하기"
 toc: true
 toc_sticky: true
