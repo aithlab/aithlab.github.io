@@ -45,10 +45,6 @@ last_modified_at: 2020-04-14
 기본적인 tunneling의 개념은 [포트 포워딩(SSH 터널링)의 개념 및 사용 방법]을 참고하였고,
 slurm을 이용하여 jupyter notebook을 실행시키는 방법은 [SSH Port Forwarding and Jupyter Notebook]을 참고하였다.
 
-서버를 사용하다보면 ssh를 많이 접하게 되는데, 
-기존에는 코드를 올려 학습을 돌려두고 나중에 체크포인트 등을 가져와서 로컬에서 사용하는 용도로 많이 사용했었다.
-
-
 # 2.1. Sever side
 
 우선, resource를 할당받아 job을 생성하자.
