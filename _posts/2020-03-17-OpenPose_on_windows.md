@@ -1,5 +1,5 @@
 ---
-title:  "OpenPose"
+title:  "OpenPose - Pose Estimation"
 excerpt: "CMU의 OpenPose를 windows 10 환경에서 실행하기"
 toc: true
 toc_sticky: true
@@ -11,6 +11,8 @@ categories:
 tags: 
   - OpenPose
   - Key point detection
+  - Pose estimation
+  - Multi-person
   - real time
 last_modified_at: 2020-03-17
 ---
