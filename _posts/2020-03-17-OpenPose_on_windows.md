@@ -13,7 +13,7 @@ tags:
   - Key point detection
   - Pose estimation
   - Multi-person
-  - real time
+  - Real time
 last_modified_at: 2020-03-17
 ---
 
