@@ -1,6 +1,6 @@
 ---
-title:  "SSH tunneling"
-excerpt: "GPU 서버의 resource를 로컬에서 사용하기"
+title:  "SSH tunneling with slurm"
+excerpt: "GPU 서버의 resource를 로컬에서 사용하기 (with slurm)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
@@ -9,7 +9,7 @@ use_math: true
 categories: 
   - Environment
 tags: 
-  - Slurm
+  - slurm
   - ssh tunneling
 last_modified_at: 2020-04-14
 ---
