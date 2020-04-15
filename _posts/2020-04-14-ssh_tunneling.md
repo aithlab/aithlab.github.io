@@ -81,8 +81,8 @@ ssh -N -f -L [로컬에서 사용할 포트]:[서버 내부 주소]:[서버의 �
 ```
 
 ssh의 옵션으로 N, f, L을 사용하는데, 각각을 간단히 살펴보면 [출처](http://linuxcommand.org/lc3_man_pages/ssh1.html):
-* -N: remote command를 실행하지 않도록 하여 port forwarding할 때 사용하면 좋다
-* -f: background에서 실행하도록 한다
+* -N: remote command를 실행하지 않도록 하여 port forwarding할 때 사용하면 좋다.
+* -f: background에서 실행하도록 한다.
 * -L: 로컬 컴퓨터의 port와 연결시켜줄 서버의 포트를 지정해준다
 
 예를 들면, 다음과 같이 접속하게 되면 데스크탑과 서버 사이의 tunnel이 생성된다.
