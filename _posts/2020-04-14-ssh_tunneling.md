@@ -80,7 +80,7 @@ web browser에서 `jupyter notebook`에 접속하기 전에 ssh를 이용하여 
 ssh -N -f -L [로컬에서 사용할 포트]:[서버 내부 주소]:[서버의 포트(현재의 경우 8888)] [userid]@[서버주소] -p [포트번호]
 ```
 
-ssh의 옵션으로 N, f, L을 사용하는데, 각각을 간단히 살펴보면 [출처](http://linuxcommand.org/lc3_man_pages/ssh1.html):
+ssh의 옵션으로 N, f, L을 사용하는데, 각각을 간단히 살펴보면: ([출처](http://linuxcommand.org/lc3_man_pages/ssh1.html))
 * -N: remote command를 실행하지 않도록 하여 port forwarding할 때 사용하면 좋다.
 * -f: background에서 실행하도록 한다.
 * -L: 로컬 컴퓨터의 port와 연결시켜줄 서버의 포트를 지정해준다
@@ -140,6 +140,7 @@ Verify password:
 * [SSH Port Forwarding and Jupyter Notebook]
 * [포트 포워딩(SSH 터널링)의 개념 및 사용 방법]
 * [slurm]
+* [ssh 옵션](http://linuxcommand.org/lc3_man_pages/ssh1.html)
 
 [SSH Port Forwarding and Jupyter Notebook]: https://evcu.github.io/notes/port-forwarding/
 [포트 포워딩(SSH 터널링)의 개념 및 사용 방법]: https://blog.naver.com/PostView.nhn?blogId=alice_k106&logNo=221364560794&parentCategoryNo=&categoryNo=22&viewDate=&isShowPopularPosts=false&from=postView
