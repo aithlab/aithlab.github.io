@@ -10,7 +10,7 @@ categories:
   - Python
 tags: 
   - path
-last_modified_at: 2020-03-24
+last_modified_at: 2020-04-11
 ---
 
 ***
@@ -49,6 +49,17 @@ os 라이브러리에서 많이 사용하는 함수들은 다음과 같다.
 * os.path.exists(path): path가 존재하는지 확인하는 함수
 * os.path.dirname(__filename__): 현재 실행 파일이 위치하는 경로 반환
 * os.path.abspath(__filename__): 현재 실행 파일의 절대 경로 반환
+* 파일의 시간을 체크하는 함수
+  * os.path.getctime(file_path): 파일의 change 시간을 반환 (제일 최근 체크포인트를 가져올때 유용)
+  * os.path.getatime(file_path): 파일의 access 시간을 반환 
+  * os.path.getmtime(file_path): 파일의 modification 시간을 반환
+
+> Access - the last time the file was read
+> Modify - the last time the file was modified (content has been modified)
+> Change - the last time meta data of the file was changed (e.g. permissions)
+> Modify Change 차이점: modify의 경우 file의 content가 변경되는 것을 의미하고, change의 경우 content 뿐만 아니라 권한 등의 변경 시간을 보여준다.
+> 출처: [getctime, getmtime, getatime 차이]
+
 
 # 2.2. 그 외 주로 사용되는 함수
 
@@ -57,7 +68,6 @@ os 라이브러리에서 많이 사용하는 함수들은 다음과 같다.
 * os.path.basename(path): path에서 파일명(확장자 포함)만 추출하는 함수
 * os.getcwd(): 현재 작업 디렉토리 출력
 
-
 이 외에도 코딩을 하다가 자주 사용되는 함수가 있으면 계속 추가하여 작성하려 한다.
 
 ***
@@ -65,3 +75,4 @@ os 라이브러리에서 많이 사용하는 함수들은 다음과 같다.
 # 참고자료
 * 모듈 vs. 라이브러리: <https://brownbears.tistory.com/437>
 * <https://wikidocs.net/3717>
+* [ctime, mtime, atime 차이](https://unix.stackexchange.com/questions/2802/what-is-the-difference-between-modify-and-change-in-stat-command-context)
