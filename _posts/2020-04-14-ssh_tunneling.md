@@ -77,7 +77,7 @@ resource를 할당받고 virtual environment를 이용하여 `jupyter notebook`�
 web browser에서 `jupyter notebook`에 접속하기 전에 ssh를 이용하여 서버와 로컬 컴퓨터 사이의 tunnel을 만들어주자.
 
 ```bash
-ssh -N -f -L [로컬에서 사용할 포트]:[서버 내부 주소]:[서버의 포트(현재의 경우 8888)] [userid]@[서버주소] -p [포트번호]
+ssh -N -f -L [로컬에서 사용할 포트]:[서버 내부 주소]:[서버의 포트(포스팅 예제의 경우 8888)] [userid]@[서버주소] -p [포트번호]
 ```
 
 ssh의 옵션으로 N, f, L을 사용하는데, 각각을 간단히 살펴보면: ([출처](http://linuxcommand.org/lc3_man_pages/ssh1.html))
